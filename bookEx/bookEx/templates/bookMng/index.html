@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block sidenav %}
+   {% for item in item_list %}
+       <li>
+          <a href="{{ item.link }}"> {{ item.item }}</a>
+       </li>
+   {% endfor %}
+{% endblock sidenav %}
+
+
+{% block content %}
+   <h1 align="center"> Welcome to Book Exchange System </h1>
+   <p align="center"> This system allows users to post and browser books.</p>
+{% endblock content%}
